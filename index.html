@@ -1,0 +1,261 @@
+<html>
+
+<head>
+  <title>Skeleton Loaders</title>
+  <style>
+    html {
+      font-size: 14px;
+    }
+    body {
+      text-align: center;
+      padding: 48px 40px;
+    }
+
+    body > div {
+      box-sizing: border-box;
+      display: inline-block;
+      max-height: 195px;
+      min-width: 670px;
+    }
+
+    @keyframes loading1 {
+      to {
+        background-position: 105% 0;
+      }
+    }
+
+    .loader1 {
+      border-radius: 3px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+      margin-top: 1rem;
+      min-height: 190px;
+      padding: 1.5rem 2rem;
+      text-align: left;
+    }
+
+    .loader1 div {
+      margin: 1rem 0;
+    }
+
+    .loader1 h4,
+    .loader1 p,
+    .loader1 span,
+    .loader1 b {
+      animation: loading1 1s infinite;
+      animation-timing-function: linear;
+      background-color: #eee;
+      background-image: linear-gradient(120deg, #eee0, #ffffffbb, #eee0);
+      background-position: -5%, 0%;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      min-height: 2rem;
+    }
+
+    .loader1 h4 {
+      margin: 0 0 .5rem 0;
+    }
+
+    .loader1 p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      width: 75%;
+    }
+
+    .loader1 span {
+      display: inline-block;
+      width: 65%;
+    }
+
+    .loader1 b {
+      background-size: 3rem;
+      float: right;
+      width: 15%;
+    }
+
+    @keyframes loading2 {
+      to {
+        background-position: 105% 0, 135% 0;
+      }
+    }
+
+    .loader2 h4,
+    .loader2 p,
+    .loader2 span,
+    .loader2 b {
+      animation: loading2 1s infinite;
+      animation-timing-function: linear;
+      background-color: #eee;
+      background-image: linear-gradient(100deg, #eee, #fff, #eee), linear-gradient(100deg, #eee, #fff, #eee);
+      background-position: -5% 0%, 30% 0;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      min-height: 2rem;
+    }
+
+    @keyframes loading3 {
+      to {
+        background-position: 105% 0, 135% 0;
+      }
+    }
+
+    .loader3 {
+      border-radius: 3px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+      margin-top: 1rem;
+      min-height: 190px;
+      overflow: hidden;
+      padding: 1.5rem 2rem;
+      position: relative;
+      text-align: left;
+    }
+
+    .loader3 h4,
+    .loader3 p,
+    .loader3 span,
+    .loader3 b {
+      background-color: #eee;
+      min-height: 2rem;
+    }
+
+    .loader3 h4 {
+      margin: 0 0 .5rem 0;
+    }
+
+    .loader3 p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      width: 75%;
+    }
+
+    .loader3 span {
+      display: inline-block;
+      width: 65%;
+    }
+
+    .loader3 b {
+      background-size: 3rem;
+      float: right;
+      width: 15%;
+    }
+
+    .loader3 .loader-overlay {
+      animation: loading3 1s infinite;
+      animation-timing-function: linear;
+      background-image: linear-gradient(90deg, transparent, #fff, transparent), linear-gradient(90deg, transparent, #fff, transparent);
+      background-position: -5% 0, 30% 0;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      bottom: 0;
+      left: -5%;
+      position: absolute;
+      right: -5%;
+      top: 0;
+      transform: skewX(150deg);
+    }
+
+
+    @keyframes loading4 {
+      to {
+        background-position: 105%, 0;
+      }
+    }
+
+    .loader4 {
+      border-radius: 3px;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+      margin-top: 1rem;
+      min-height: 190px;
+      overflow: hidden;
+      padding: 1.5rem 2rem;
+      position: relative;
+      text-align: left;
+    }
+
+    .loader4 h4,
+    .loader4 p,
+    .loader4 span,
+    .loader4 b {
+      background-color: #eee;
+      min-height: 2rem;
+    }
+
+    .loader4 h4 {
+      margin: 0 0 .5rem 0;
+    }
+
+    .loader4 p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      width: 75%;
+    }
+
+    .loader4 span {
+      display: inline-block;
+      width: 65%;
+    }
+
+    .loader4 b {
+      background-size: 3rem;
+      float: right;
+      width: 15%;
+    }
+
+    .loader4 .loader-overlay {
+      animation: loading4 1s infinite;
+      animation-timing-function: linear;
+      background-image: linear-gradient(90deg, #ffffff11, #ffffffaa, #ffffff11);
+      background-position: -5%, 0;
+      background-repeat: no-repeat;
+      background-size: 5rem;
+      bottom: 0;
+      left: -5%;
+      position: absolute;
+      right: -5%;
+      top: 0;
+      transform: skewX(150deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loader1">
+    <h4></h4>
+    <div>
+      <p></p>
+      <p></p>
+    </div>
+    <span></span><b></b>
+  </div>
+
+  <div class="loader1 loader2">
+    <h4></h4>
+    <div>
+      <p></p>
+      <p></p>
+    </div>
+    <span></span><b></b>
+  </div>
+
+  <div class="loader3">
+    <h4></h4>
+    <div style="margin: 1rem 0;">
+      <p></p>
+      <p></p>
+    </div>
+    <span></span><b></b>
+    <div class="loader-overlay"></div>
+  </div>
+
+  <div class="loader4">
+      <h4></h4>
+      <div style="margin: 1rem 0;">
+        <p></p>
+        <p></p>
+      </div>
+      <span></span><b></b>
+      <div class="loader-overlay"></div>
+    </div>
+</body>
+
+</html>
